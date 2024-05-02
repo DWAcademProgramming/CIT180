@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+/*
+    Color Theme
+    #d04848
+    #f3b95f
+    #fde767
+    #6895d2
+*/
+
+body{
+    font-family: "Kode Mono", monospace;
+    font-size: 12px;
+    background-color: #f3b95f;
+}
+
+.w70{
+    width: 70%;
+}
+
+.w30{
+    width: 30%;
+}
+
+article{
+    background-color: #d04848;
+    border: solid 2px #fd3767;
+    min-height: 100vh;
+    padding: 20px;
+}
+hr{
+    height: 3px;
+    background-color: #6595d2;
+}
+
+h1{
+    font-size: 4em;
+    font-weight: 700;
+    font-family: monospace;
+    color: #6595d2;
+}
+h2{
+    color: #6595d2;
+    font-family: monospace;
+    text-shadow: 1px 1px grey;
+    font-size: 2rem;
+    margin-top: 100px;
+}
+
+ol, ul{
+    line-height: 150%;
+}
+
+ul{
+    margin-top: 20px;
+}
+
+td{
+    font-size: 14px;
+    font-family: "Kode Mono", monospace;
+    text-align: center;
+}
+
+#id{
+    width: 29%;
+}
+
+@media (max-width: 600px) {
+    .w70{
+        width: 100%;
+    }
+    .w30{
+        width: 100%;
+    }
+    h1{
+        text-align: center;
+    }
+}
