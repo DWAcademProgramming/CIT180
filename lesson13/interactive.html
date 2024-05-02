@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://lisabalbach.com/CIT180/Lesson12/interactive.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Learning About Events</title>
+<style>
+h1{
+	color:deeppink;
+	text-shadow:1px 1px darkblue;
+	font-size:20pt;
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body{
+	font-family:"Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	font-size:12pt;
+}
+</style>
+</head>
+<body cz-shortcut-listen="true">
+	<h1>Selecting Colors</h1>
+	<p>Please select colors and watch the page transform:</p>
+	<p>Please select a color for the background:<input type="color" id="backgroundColor"></p>
+	<p>Please select a color for your text:<input type="color" id="textColor"></p>
+	<p>Please select a generic font typeface for your page:
+		<select id="font">
+			<option>serif</option>
+			<option>san-serif</option>
+			<option>cursive</option>
+			<option>monospace</option>
+			<option>fantasy</option>
+		</select>
+	</p>
+	<p>Please select a font-size for your text: 
+		<select id="size">
+			<option>small</option>
+			<option>normal</option>
+			<option>large</option>
+			<option>x-large</option>
+		</select>
+	</p>
+
+	<p>To apply the changes, select the Change button:&nbsp; <button>Change</button></p>
+	<script src="js/modifystyles.js"></script>
+</body>
+</html>

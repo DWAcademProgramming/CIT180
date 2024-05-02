@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introductions</title>
+</head>
+<body>
+
+    <h1>Introductions</h1>
+
+    <script>
+        var name = new String();
+        var color = new String();
+        var food = new String();
+        var age = new Number(); 
+
+        name = prompt("What is your name?"); 
+        color = prompt("What is your favorite color?"); 
+        food = prompt("What is your favorite food?"); 
+        age = prompt("What is your age?"); 
+        // alert(name + " you are" + age + " years old. Here are your favorites: color = " + color + " food = " + food); 
+        document.write("<h2>"+name+", you are "+age+" years old.</h2>");
+        document.write("<p>Here are your favorites: </p>");
+        document.write("<p>Color = "+ color + "<br>Food Dave= " + food + "</p>");
+    </script>
+</body>
+</html>

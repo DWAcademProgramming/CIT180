@@ -1,0 +1,160 @@
+/*
+    Color Pallete
+    #ffcc70
+    #fffadd
+    #8ecddd
+    #22668d
+*/
+
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    background-color: #f3f3f3;
+    text-shadow: 4px 4px grey;
+    font-size: 3em;
+    font-weight: 700;
+    border-radius: 30px;
+    padding: 20px;
+    width: 90%;
+}
+
+h3{
+    background-color: #ffcc70;
+    text-shadow: 1px 1px grey;
+    opacity: .9;
+    color: #22668d;
+    padding: 10px;
+    width: 30%;
+    border-radius: 30px;
+    animation: typing 3.5s steps(100, end), blink-caret .75s step-end;
+}
+nav {
+	margin:50px auto; 
+	text-align: center;
+}
+
+nav ul {
+    background: linear-gradient(0deg, white, peachpuff, white); 
+	box-shadow: 6px 6px 6px rgba(0,0,0,0.15);
+	padding: 0 20px;
+	border-radius: 10px;  
+	list-style: none;
+	position: relative;
+	color:black;
+	font-weight:900;
+	width:100%;
+	display:inline-table;
+}
+nav ul li {
+	display:inline-table;
+    margin-right: 20px;
+}
+nav ul li a {
+	display: block; 
+	padding: 25px 40px;
+	color:#808080; 
+	text-decoration: none;
+}
+nav ul li:hover {
+    background: linear-gradient(180deg, white, #ffb878, peachpuff); 
+}
+nav ul li:hover a {
+	color:#757575;
+}
+nav ul li:hover > ul {
+	display:flex;
+	flex-direction:column;
+	width:30%;
+}
+	
+nav ul ul {
+	display: none;
+    background: linear-gradient(180deg, white,  peachpuff); 
+	border-radius: 0px; 
+	padding: 0;
+	position: absolute; 
+	z-index:10;
+}
+nav ul ul li {
+	display:block; 
+	border-top: 1px solid #757575;
+	border-bottom: 1px solid #757575; 
+	position: relative;
+}
+nav ul ul li a {
+	padding: 15px 40px;
+	color: #757575;
+}	
+nav ul ul li a:hover {
+	background: peachpuff;
+	color:orange;
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+a:link{
+    color: #22668d;
+    text-decoration: underline; 
+}
+
+a:visited{
+    color: #8ecddd;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    background: #ffcc70;
+    font-weight: 700;
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+section{
+    background-color: #f3f3f3;
+    width: 50%;
+    opacity: .8;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+footer{
+    background-color: #f3f3f3;
+    opacity: .9;
+    color: #22668d;
+    font-weight: 700;
+    text-shadow: 1px 1px grey;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+footer a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 20%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font size */
+}

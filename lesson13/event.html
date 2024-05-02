@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        *{
+            font-family: "Lato", sans-serif;
+        }
+        button{
+            padding: 10px;
+            background: black;
+            color: white;
+        }
+        button:hover{
+            background: darkred;
+        }
+        img{
+            padding: 20px;
+            background: #444;
+            outline: 5px solid black;
+            outline-offset: 20px;
+            width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body style="text-align: center; margin-top: 5%;">
+    <p><img id="chicago" src="media/chicago-night.jpg" alt="Chicago"></p>
+    <button onclick="document.getElementById('chicago').src='media/chicago-day.jpg'"> Click to see Chicago during the day </button>&nbsp;
+    <button onclick="document.getElementById('chicago').src='media/chicago-night.jpg'"> Click to see Chicago at night </button>&nbsp;
+</body>
+</html>

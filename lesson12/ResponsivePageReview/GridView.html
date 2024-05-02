@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	*{
+		box-sizing: border-box;
+	}
+	/* will contain the grid view columns */
+	.row::after {
+	content: "";
+	clear: both;
+	display: table;
+	}	
+	/* mobile  is the default */
+	[class*="col-"] {
+	float: left;
+	width:100%;	
+	}	
+	/* tablet and desktop */	
+	@media only screen and (min-width: 600px) {	
+	.col-1 {width: 8.33%;}
+	.col-2 {width: 16.66%;}
+	.col-3 {width: 25%;}
+	.col-4 {width: 33.33%;}
+	.col-5 {width: 41.66%;}
+	.col-6 {width: 50%;}
+	.col-7 {width: 58.33%;}
+	.col-8 {width: 66.66%;}
+	.col-9 {width: 75%;}
+	.col-10 {width: 83.33%;}
+	.col-11 {width: 91.66%;}
+	.col-12 {width: 100%;}
+	}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    font-size: 1em;
+}
+img{
+	width:auto;
+	float:left;
+	max-height:200px;
+	border-radius:20px;
+	box-shadow:2px 2px black;
+
+}	
+a:link, a:visited, a:hover, a:active{
+		color:maroon;
+		text-decoration:none;
+}	
+/* css sytling for menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: maroon;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: black;
+	color:white;
+	border-radius:10px;
+}
+	
+/* Style the css menu*/
+nav {
+    background-color: #333;
+	padding:10px;
+}
+/* style the header */	
+header {
+    background-color: #333;
+    color: white;
+    -webkit-text-stroke: .3px darkgoldenrod;
+    -webkit-text-fill-color:lemonchiffon;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}	
+/* Style the footer */
+footer {
+    background-color: #ccc;
+    color: black;
+	font-size:.8em;
+    padding: 10px;
+    text-align: right;
+}
+
+/* styling for sectionisions within the article element */	
+ article > section {
+	text-align:center;
+	border: 2px #333 solid;
+	font-size:1em;
+	background-color:white;
+	max-height:400px;
+	overflow:auto;
+}
+aside{
+	margin:.5%;
+	box-shadow:1px 1px #333;
+	border-radius:10px;
+	padding:10px;	
+}	
+</style>
+</head>
+<body>
+<main>
+  <header class="col-12">
+    <h2>Most Beautiful Travel Destinations in the US</h2>
+  </header>
+  <nav class="col-12">
+    <ul>
+      <li><a  href="https://www.antelopecanyon.com/" target="new">Antelope Canyon</a></li>
+      <li><a href="https://www.nps.gov/kefj/index.htm" target="new">Kenai Fjords</a></li>
+      <li><a href="https://www.fs.usda.gov/whitemountain" target="new">White Mountains</a></li>
+      <li><a href="https://www.nps.gov/crla/index.htm" target="new">Crater Lake</a></li>
+	  <li><a href="https://www.yellowstonepark.com/things-to-do/grand-prismatic-midway-geyser-basin" target="new">Grand Prismatic Spring</a></li>
+	  <li><a href="https://www.fs.usda.gov/recarea/crgnsa/recarea/?recid=30026" target="new">Multnomah Falls</a></li>		
+    </ul>
+  </nav>
+  <aside class="col-12">
+	 <p> Before visiting a park, please check the park website to determine its opearting status.&nbsp;</p>
+	</aside>
+  <article class="col-6">
+	  <section>
+	  <p><img src="media/antelopeCanyon.jpeg"  alt="antelope canyon"/></p>
+	  <h2>Antelope Canyon, Arizona</h2>
+	  <p>Antelope Canyon is a slot canyon in the American Southwest, on Navajo land east of Page, Arizona. It includes two separate, scenic slot canyon sections, referred to as Upper Antelope Canyon, and Lower Antelope Canyon. </p>
+	  </section>
+    <section>
+		  <p><img src="media/kenaiFjords.jpeg"  alt="kenai fjords"/></p>
+		  <h2><strong>Kenai Fjords, Alaska</strong></h2>
+		  <p>Alaska&rsquo;s Kenai Fjords National Park is named after its numerous glacial-carved fjords—beautiful ice valleys that sit below sea level. The fjords run down the mountains into the iconic Harding Icefield, one of the largest ice fields in the United States with 40 tidewater glaciers flowing into it.
+		    <br>
+		  </p>
+		  <p>&nbsp;</p>
+	  </section>
+    <section>
+		  <p><img src="media/whiteMountains.jpg"  alt="white mountains"/></p>
+		  <h2>White Mountains, New Hampshire</h2>
+		  <p>The White Mountains are a mountain range covering about a quarter of the state of New Hampshire and a small portion of western Maine in the United States. They are part of the northern Appalachian Mountains and the most rugged mountains in New England.</p>
+	  </section>	  
+  </article>
+  <article class="col-6">
+	 <section>
+		  <p><img src="media/craterLake.jpg" alt="crater lake"/></p>
+		 <h2>Crater Lake, Oregon</h2>		
+		 <p>With the lake at its center, this Oregon national park offers many ways for visitors to explore and enjoy. Take in the sights while driving along the 33-mile (53-kilometer) Rim Drive, which circles Crater Lake, or aboard a ranger-led cruise on the lake for a close-up view of rock formations like the Phantom Ship and Wizard Island.</p>
+	  </section> 
+	  <section>
+	    <p><img src="media/grandSpring.jpg"  alt="grand prismatic spring"/></p>
+	    <h2>Grand Prismatic Spring, Wyoming</h2>		  
+	    <p>The Grand Prismatic Spring in Yellowstone National Park is the largest hot spring in the United States, and the third largest in the world, after Frying Pan Lake in New Zealand and Boiling Lake in Dominica. It is located in the Midway Geyser Basin. </p>
+    </section>
+	  <section>
+		  <p><img src="media/multnomahFalls.jpeg" alt="multnomah falls"/></p>
+		  <h2>Multnomah Falls, Columbia River Gorge, Oregon</h2>
+		  <p>Multnomah Falls is the most visited natural recreation site in the Pacific Northwest with more than 2 million stopping by each year to take in the views! </p>
+	  </section>
+	</article>
+  <article class="col-12">
+	  <section> 
+		  <p><img src="media/napali.jpg"  alt="na pali coat"/></p>
+		  <h2>Na Pali Coast, Kauai, Hawaii</h2>		  
+		  <p>With steep emerald cliffs, lush valleys, and remote cascading waterfalls, the Na Pali Coast is one of Hawaii&rsquo;s most beautiful regions, and no visit to Kauai is complete without a visit to this magical coastline. There are only three ways to explore the Na Pali Coast—by air, by sea, and on foot—and each offers its own unique perspective.		  </p>
+	  </section>
+	  <section> 
+	    <p><img src="media/antelopeValley2.jpg" alt="antelope valley"/> </p>
+	    <p> <img src="media/antelopeValley.jpg" alt="antelope valley" style="float:right;"/></p>
+		  <h2>Antelope Valley, California</h2>	     
+		  <p>The Antelope Valley is located in northern Los Angeles County, California, and the southeast portion of Kern County, California, and constitutes the western tip of the Mojave Desert. It is situated between the Tehachapi, Sierra Pelona, and the San Gabriel Mountains.</p>
+	   
+    </section>
+	  <section> 
+		  <p><img src="media/acadiaPark.jpg"  alt="acadia national park"/></p>
+		  <h2>Acadia National Park, Maine</h2>		  
+		  <p>Acadia National Park is a 47,000-acre Atlantic coast recreation area primarily on Maine's Mount Desert Island. Its landscape is marked by woodland, rocky beaches and glacier-scoured granite peaks such as Cadillac Mountain, the highest point on the United States&rsquo; East Coast. Among the wildlife are moose, bear, whales and seabirds.</p>
+	  </section>
+	</article>
+  <footer class="col-12">
+    <p><cite>Content adapted and retrieved from <a href="https://www.jetsetter.com/magazine/most-beautiful-places-in-the-united-states/"> Most Beautiful Places in the U.S.</a>, November 2020</cite></p>
+  </footer>
+</main>
+</body>
+</html>
