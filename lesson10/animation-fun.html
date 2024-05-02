@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://lisabalbach.com/CIT180/Lesson10/animation-fun.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Animation Fun</title>
+<style>
+body {
+	background-color: white;
+	width: 400px;
+	height: 40px;
+	margin: 0;	
+	
+}
+.circle {
+	width: 40px;
+	height: 40px;	
+	border-top-right-radius: 40px;
+	float: left;
+	transform-origin: bottom left;
+}
+
+.aa {
+	animation: rotate1 .8s ease-in-out alternate infinite;
+	background-color: rgb(0, 152, 255);	
+}
+
+.bb {
+	animation: rotate2 .8s ease-in-out alternate infinite;
+	background-color: rgb(100, 125, 255);	
+	transform: rotate(90deg);
+}
+
+.cc {
+	animation: rotate1 .8s ease-in-out alternate infinite;
+	background-color: rgb(167, 98, 255);	
+}
+
+.dd {
+	animation: rotate2 .8s ease-in-out alternate infinite;
+	background-color: rgb(237, 87, 255);
+	transform: rotate(90deg);
+}
+
+.ee {
+	animation: rotate1 .8s ease-in-out alternate infinite;
+	background-color: rgb(255, 81, 113);	
+}
+
+.ff {
+	animation: rotate2 .8s ease-in-out alternate infinite;
+	background-color: rgb(255, 49, 148);
+	transform: rotate(90deg);
+}
+
+.gg {
+	animation: rotate1 .8s ease-in-out alternate infinite;
+	background-color: rgb(235, 47, 0);	
+}
+
+.hh {
+	animation: rotate2 .8s ease-in-out alternate infinite;
+	background-color: rgb(232, 83, 0);
+	transform: rotate(90deg);
+}
+
+.ii {
+	animation: rotate1 .8s ease-in-out alternate infinite;
+	background-color: rgb(232, 120, 0);	
+}
+
+.jj {
+	animation: rotate2 .8s ease-in-out alternate infinite;
+	background-color: rgb(232, 158, 0);
+	transform: rotate(90deg);
+}
+
+@keyframes rotate1 {
+	100% {transform: rotate(-360deg);}	
+}
+@keyframes rotate2 {
+	100% {transform: rotate(450deg);}	
+}
+
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window rather than the content*/
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 100px; /* Set a specific width */
+    text-decoration: none; /* Remove underline */
+    font-size: 20px; /* Increase font size */
+    color: white; /* White text color */
+    border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+#mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* The about link: 20px from the top with a green background */
+#about {
+    top: 20px;
+    background-color: rgb(0, 152, 255);
+}
+
+#blog {
+    top: 80px;
+    background-color: rgb(237, 87, 255);
+}
+
+#projects {
+    top: 140px;
+    background-color: rgb(235, 47, 0);
+}
+
+#contact {
+    top: 200px;
+    background-color: rgb(232, 158, 0);
+}
+
+
+</style>
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+	<a href="#" id="about">About</a>
+	<a href="#" id="blog">Blog</a>
+	<a href="#" id="projects">Projects</a>
+	<a href="#" id="contact">Contact</a>
+</div>
+
+<div style="margin-top:500px;">
+	<div class="circle aa"></div>
+	<div class="circle bb"></div>
+	<div class="circle cc"></div>
+	<div class="circle dd"></div>
+	<div class="circle ee"></div>
+	<div class="circle ff"></div>
+	<div class="circle gg"></div>
+	<div class="circle hh"></div>
+	<div class="circle ii"></div>
+	<div class="circle jj"></div>
+</div>
+
+
+
+</body></html>

@@ -1,0 +1,93 @@
+body {
+	font:12pt Verdana, Arila, Georgia, sans-serif; 
+	margin:auto;
+	padding:0;
+	border:0;
+	background-color:white;
+	display:flex;
+	flex-direction:column;
+	background:url('../media/green-swirly.png');
+    background-position:1% 20%;
+    background-repeat:no-repeat;
+    min-height:500px;	
+}
+
+
+section{
+    margin-left:15%;
+    max-width:600px;
+}
+
+section a:link {
+    text-decoration:none;
+    font-weight:bold;
+    color:green;
+}
+
+nav {
+    margin-left:40px;
+    margin-top:0px;
+}
+nav ul {
+ background: linear-gradient(0deg, white, green, white);
+    box-shadow: 6px 6px 6px rgba(0,0,0,0.15);
+    padding: 0 20px;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    color:white;
+    font-weight:900;
+}
+
+nav ul li {
+    display:inline-table;
+}
+
+nav ul li:hover {
+    background: radial-gradient(white,green);
+}
+
+nav ul li a {
+    display: block;
+    padding: 25px 40px;
+    color:white;
+    text-decoration: none;
+}
+
+nav ul li:hover a {
+    color:black;
+    text-decoration: none;
+}
+
+nav ul li:hover > ul {
+    display:flex;
+    flex-direction:column;
+}
+
+nav ul ul {
+    display: none;
+    background: radial-gradient(white,green);
+    border-radius: 0px;
+    padding: 0px;
+    position: absolute;
+    z-index:10;
+}
+
+
+nav ul ul li {
+    display:block;
+    border-top: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+    position: relative;
+    text-align:left;
+}
+
+nav ul ul li a {
+    padding: 15px 40px;
+    color: #757575;
+}
+
+nav ul ul li a:hover {
+    background: black;
+    color:lightgreen;
+}

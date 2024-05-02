@@ -1,0 +1,13 @@
+.head h1{
+    font-size: 2.5em;
+}
+
+aside, img, nav{
+    display: none;
+}
+
+nav ul li{
+    border: none;
+    margin: 0px;
+    text-decoration: underline;
+}
