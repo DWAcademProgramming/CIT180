@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)https://lisabalbach.com/CIT180/Lesson8/customerForm.html -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!--
+	Fun fact, I built something just like this for Lakeview Run Club in Chicago back in 2020...
+-->
+<title>Customer Inquiry Form</title>
+<link href="./customerForm_files/css2" rel="stylesheet">
+<style type="text/css">
+body{
+	font-family: 'Nixie One', cursive;
+	background-image:url('media/runningClub.jpg');
+    background-repeat:no-repeat;
+    background-position:top center;
+    color:black;
+    font-size:14pt;
+    min-width:500px;
+}
+form{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+h1{
+	font-family: 'Nixie One', cursive;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-size:3em;
+	text-align:center;
+	color:darkblue;
+	font-weight:900;
+	text-shadow:2px 2px 1px white;
+	width:40%;
+
+}
+legend{
+	font-size:2em;
+	font-weight:900;
+	padding-top:15px;
+	padding-bottom:15px;
+	margin-left:10px;
+	color:#527ACC;
+	text-shadow:1px 1px 1px black;
+
+}
+label{
+	text-align:right;
+	width:150px;
+	float:left;
+	padding-right:10px;
+	color:black;
+	font-weight:900;
+	font-size:14pt;
+	vertical-align:text-top;
+}
+
+fieldset {
+	margin-bottom: 1%;
+	padding:1%;
+	width:60%;
+	flex:1;
+	max-width:600px;
+}
+	
+.inputButton{
+	font-size:14pt;
+	width: 100px; 
+	height: 30px;
+	font-size:12pt;
+	background-color: #EBF5FF;
+	color:black;
+	font-family: 'Nixie One', cursive;
+	font-weight:900;
+	margin-top:50px;
+	box-shadow:2px 2px 2px black;
+}
+.formEntry{
+	text-align:left;
+	width:200px;
+	font-size:14pt;
+	color:black;
+}
+.money{
+	text-align:left;
+	font-size:12pt;
+	color:black;
+	width:275px;
+}
+
+</style>
+</head>
+<body>
+<form 
+    id="register" 
+    action="welshdavmsu@gmail.com" 
+    method="post"
+    enctype="text/plain"
+>
+<h1>Running Club Membership </h1>
+<fieldset>
+	<legend>Personal Details</legend>
+	<div style="display: block;">
+		<p>
+			<label>First Name</label>
+			<input class="formEntry" id="given-name" name="given-name" type="text"  placeholder="First name only" required autofocus>
+		</p>
+		<p>
+			<label>Last Name</label>
+			<input class="formEntry" id="family-name" name="family-name" type="text"  placeholder="Last name only" required>
+		</p>
+		<p>
+			<label>Date of Birth</label>
+			<input class="formEntry" id="dob" name="dob" type="date" required>
+			(MM/DD/YYYY)
+		</p>
+		<p>
+			<label>Email</label>
+			<input class="formEntry" id="email" name="email" type="email"  placeholder="example@domain.com">
+		</p>
+		<p>
+			<label>URL</label>
+			<input class="formEntry" id="url" name="url" type="url"  placeholder="http://mysite.com" required>
+		</p>
+		<p>
+			<label>Telephone</label>
+			<input class="formEntry" id="phone" name="phone" type="tel"  placeholder="(555) 555-5555" required>
+		</p>
+		<p>
+			<label>Shoe Size</label>
+			<input 
+				class="formEntry" 
+				id="shoes" 
+				name="shoes" 
+				type="number" 
+				min="5" 
+				max="18" 
+				step="0.5" 
+				value="9" 
+				style="width: 50px;"
+				>
+		</p>
+		<p>
+			<label>
+				Skill Level 
+				<br>
+				(low to high)
+			</label>
+			<input id="skill" name="skill" type="range"  min="0" max="100" value="0">
+		</p>
+	</div>
+</fieldset>
+
+<fieldset>
+	<legend>Card Details</legend>
+	<div style="display: inline;">
+		<label>Visa</label> <input type="radio" name="cardtype" id="visa"><br>
+		<label>Mastercard</label> <input type="radio" name="cardtype" id="mastercard"><br>
+		<label>AMEX</label> <input type="radio" name="cardtype" id="amex">
+	</div>
+	<p><label>Name</label>
+	<input inputmode="cardName" name="cardName" type="text" placeholder="Name as it appears on your card" class="money" required></p>
+	<p><label> Card Number </label>
+	<input id="cardNo" name="cardNo" type="number" required class="money"></p>
+	<p><label>Security Code</label>
+	<input 
+		type="number" 
+		required 
+		pattern="[0-9]{3}"
+		name="security" 
+		id="security" 
+		class="money" 
+		placeholder="Three digits on the back of your card"
+	></p>
+	<p><label>Expiry Date</label>
+	<input id="expiry" name="expiry" type="date"></p>
+</fieldset>
+
+<div style="width: 40%;">
+	<p style="text-align: center; margin-right: 2%;">
+		<button class="inputButton" type="submit" style="width: 200px;"> Submit Registration</button>
+		<button class="inputButton" type="reset" value="reset">Reset</button>
+	</p>
+</div>
+
+</form> 
+
+</body></html>

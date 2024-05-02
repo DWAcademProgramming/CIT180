@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)https://lisabalbach.com/CIT180/Lesson9/resizable-boxes.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Reizable Boxes</title>
+<style>
+body{
+	background-color:black;
+}
+section{
+	font-size:1.3em;
+	font-weight:bold;
+}
+.resizable{
+  resize: both;
+  overflow: scroll;
+  border: 1px solid black;
+}
+#contain{
+  height: auto;
+  width: 300px;
+  outline: 3px solid peachpuff;
+  outline-offset:5px;
+  padding:10px;
+  color:white;
+  text-shadow:1px 1px black;
+  background: url(media/zen-water.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#cover{
+  height: auto;
+  width: 300px;
+  outline: 3px solid peachpuff;
+  outline-offset:5px;
+  padding:10px;
+  color:white;
+  text-shadow:1px 1px black;  
+  background: url(media/zen-water.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+p {
+  height: 100px;
+  width: 200px;
+  padding:10px;
+  background-color:white;
+  color:black;
+  font-size:.8em;
+  font-weight:normal;
+  text-shadow:0px 0px white;
+}
+.center {
+    margin: auto;
+}
+</style>
+</head>
+<body>
+<section class="resizable center" id="contain">
+Container#1 is resizeable with a background image set to contain (it will resize too, but may not fill the space).
+  <p class="resizable center">
+    This paragraph is resizable in all directions, because
+    the CSS 'resize' property is set to 'both' on this element.
+  </p>
+</section>
+<section class="resizable center" id="cover" style="margin-top:30px;">
+Container#2 is resizeable with a background image set to cover (it will resize too AND it will always fill the space, 
+but the edges of the image may not always display).
+  <p class="resizable center">
+    This paragraph is resizable in all directions, because
+    the CSS 'resize' property is set to 'both' on this element.
+  </p>
+</section>
+
+
+</body></html>

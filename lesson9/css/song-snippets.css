@@ -1,0 +1,75 @@
+h1,h2{
+	font-family:Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	color:#0C178F;
+	text-shadow:1px 1px lemonchiffon;
+}
+header{
+	border:10px groove #0C178F;
+	padding-left:20px;
+}
+#parent{
+	background-color:#0C178F;
+	padding:20px;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+}
+article section{
+	border:1px solid #0C178F;
+	background-color:lemonchiffon;
+	width:300px;
+	padding:10px;
+	flex:1;
+	max-width:400px;
+	min-width:250px;
+	box-shadow: 2px 2px black;
+	border-radius: 20px;
+	animation:moveIn 2s;
+}
+
+.pulse{
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse{
+    0% {color:lemonchiffon;text-shadow:1px 1px black;}
+    50% {color:#0c178f;text-shadow:10px 10px 2px lemonchiffon;}
+    100%{color:darkgoldenrod;text-shadow:1px 1px darkgray;}
+}
+
+section{
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+section:hover{
+    transform:scale(1.25,1.25);
+    box-shadow: 5px 5px black;
+    background-color:aliceblue;
+    border-radius:50px;
+    padding:30px;
+}
+
+@keyframes moveIn{
+    0%{transform: translateY(0px);}
+    10% {transform: translateY(165px);}
+    15% {transform:rotate(10deg);}
+    20%{transform: translateY(0px);}
+    25% {transform:rotate(-10deg);}
+    30% {transform: translateY(100px);}
+    35%{transform: translateY(0px);}
+    40%{transform:rotate(5deg);}
+    45%{transform: translateY(75px);} 
+    55%{transform:scale(1.5,1.5);} 
+    60%{transform: translateY(0px);}
+    65% {transform: translateY(165px);}
+    70% {transform:rotate(10deg);}
+    75%{transform: translateY(0px);}
+    80% {transform:rotate(-10deg);} 
+    85% {transform: translateY(100px);}
+    90%{transform: translateY(0px);}
+    95%{transform:rotate(5deg);}
+    100%{transform: translateY(75px);}
+}

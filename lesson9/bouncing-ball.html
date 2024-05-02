@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boucing Ball</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            margin-left: 100px;
+        }
+
+        .ball{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(lightgreen, black);
+        }
+        .ballShadow{
+            border-radius: 50%;
+            width: 100px;
+            height: 10px;
+            background-color: black;
+            margin-top: 390px;
+        }
+
+        div{
+            animation: bounce 0.5s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes bounce{
+            from { transform: translate3d(0, 0, 0);}
+            to { transform: translate3d(0, 400px, 0);}
+        }
+    </style>
+</head>
+<body>
+    <div class="ball"></div>
+    <p class="ballShadow"></p>
+</body>
+</html>

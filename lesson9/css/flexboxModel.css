@@ -1,0 +1,78 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size:12pt;
+    width:75%;
+	margin-top:5%;
+ 	background-color: #4a5899;
+}
+footer p{
+    float:none;
+    clear:both;
+    background-color:#92374d; 
+    color:white; 
+    text-align:center;
+}
+header{
+	background-color: #92374d;
+	padding:10px;
+	margin-top:0px;
+}
+article{
+    display: flex;
+    height:500px;
+    overflow:auto;
+    flex-wrap:wrap;
+	align-items:center;
+	justify-content:space-between;
+}
+aside{
+	color:#c1b2ab;
+	background-color:#8c5383;
+	border:solid #4a5899 2px;
+	padding:10px;
+	position:absolute;
+	top:50px;
+}
+section{
+	flex:1;
+	background-color:white;
+	border:10px #4a5899 groove;
+	margin:10px;
+	padding:20px;
+	text-align:center;
+	height:200px;
+	overflow:auto;
+	min-width:150px;
+	min-height:200px;
+}
+
+h1 {
+    text-align:center; 
+    font-size:2em;
+    font-family:'Courier New', Courier, monospace;
+    color:#c1b2ab;
+    text-shadow:1px 1px black;
+}
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    color:#559cad;
+    text-align:center;
+    text-shadow:1px 1px black;
+}
+a:link {
+    color:green; 
+    text-decoration: underline; 
+}
+a:active {
+    color:maroon; 
+    text-decoration: underline;
+}
+a:visited {
+    color:darkblue; 
+    text-decoration: underline; 
+}
+a:hover {
+    color: white; 
+    background-color: green; 
+    text-decoration: none; 
+}

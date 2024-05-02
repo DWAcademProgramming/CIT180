@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Cube</title>
+
+    <style>
+        body{
+            margin: 75px 0px 0px 175px;
+        }
+
+        #container{
+            perspective: 500px;
+        }
+        #the_cube{
+            transform-style: preserve-3d;
+        }
+        #the_cube div{
+            width: 150px;
+            height: 150px;
+            position: absolute;
+            border: 1px solid black;
+            background: rgba(153, 204, 255, 0.5);
+            font-size: 125%;
+            font-weight: bold;
+            line-height: 125px;
+            text-align: center;
+        }
+        .front{
+            transform: translateZ(75px);
+        }
+        .back{
+            transform: rotateY(180deg) translateZ(75px);
+        }
+        .right{
+            transform: rotateY(90deg) translateZ(75px);
+        }
+        .left{
+            transform: rotateY(-90deg) translateZ(75px);
+        }
+        .top{
+            transform: rotateX(90deg) translateZ(75px);
+        }
+        .bottom{
+            transform: rotateY(-90deg) translateZ(75px);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="the_cube">
+            <div class="front">FRONT</div>
+            <div class="back">BACK</div>
+            <div class="left">LEFT</div>
+            <div class="right">RIGHT</div>
+            <div class="top">TOP</div>
+            <div class="bottom">BOTTOM</div>
+        </div>
+    </div>
+</body>
+</html>

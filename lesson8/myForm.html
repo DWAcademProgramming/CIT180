@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional's Gathering Signup</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap');
+        body{
+            font-family: "STIX Two Text", serif;
+            background-image:url('media/formal_gathering.jpg');
+            background-repeat:no-repeat;
+            background-position:top center;
+            background-size: cover;
+            color:black;
+            font-size:14pt;
+            min-width:500px;
+        }
+        h2, p, legend, label{
+            color: white;
+        }
+
+        button{
+            font-family: "STIX Two Text", serif;
+        }
+    </style>
+    <!--
+        I borrowed and modified the background code from the customer form assignment and
+        SWEAR the font working perfectly with the concept is a pure coincidence and is a 
+        step in the direction of perfection that I will not mess with. 
+    -->
+</head>
+<body>
+    <form id="register" action="https://lisabalbach.com/CIT180/Lesson8/FormProcessor.html" method="get">
+        <h2>Professional's Gathering Signup</h2>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <div style="display: block;">
+                <p>
+                    <label>Name</label>
+                    <input class="formEntry" id="name" name="name" type="text"  placeholder="Name" required autofocus>
+                </p>
+                <p>
+                    <label>Address</label>
+                    <input class="formEntry" id="address" name="address" type="text" placeholder="Address">
+                </p>
+                <p>
+                    <label>City</label>
+                    <input class="formEntry" id="city" name="city" type="text" placeholder="City">
+                </p>
+                <p>
+                    <label>State</label>
+                    <input class="formEntry" id="state" name="state" type="text" placeholder="State">
+                </p>
+                <p>
+                    <label>Zipcode</label>
+                    <input class="formEntry" id="zip" name="zipcode" type="number" placeholder="Zipcode">
+                </p>
+                <p>
+                    <label>Phone Number</label>
+                    <input class="formEntry" id="telephone" name="telephone" placeholder="xxx-xxx-xxxx" type="number" required>
+                </p>
+                <p>
+                    <label>Email</label>
+                    <input class="formEntry" id="email" name="email" placeholder="example@xmail.com" type="text" required>
+                </p>
+                <p>
+                    <label>Years of Experience</label>
+                    <input 
+                        class="formEntry" 
+                        id="years" 
+                        name="years" 
+                        type="number" 
+                        min="0" 
+                        max="55" 
+                        step="0.5" 
+                        value="0" 
+                        style="width: 50px;"
+                        >
+                </p>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience Level</legend>
+            <div style="display: inline;">
+                <label>Entry</label> <input type="radio" name="expLevel" id="entry"><br>
+                <label>Midlevel</label> <input type="radio" name="expLevel" id="midlevel"><br>
+                <label>Senior</label> <input type="radio" name="expLevel" id="senior">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tell us a bit about yourself</legend>
+            <textarea id="introinfo" name="introInfo" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>To Register or Reset?</legend>
+            <div>
+                <p style="text-align: center; margin-right: 2%;">
+                    <button class="inputButton" type="submit" style="width: 200px;"> Register</button>
+                    <button class="inputButton" type="reset" value="reset">Reset</button>
+                </p>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
